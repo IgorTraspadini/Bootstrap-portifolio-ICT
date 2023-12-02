@@ -8,27 +8,40 @@
   <title>ICT - Web Developer</title>
   <!-- included a reset.css file as a good practice -->
   <link rel="stylesheet" href="./assets/css/reset.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
-  <header>
-    <h1>Igor Traspadini</h1>
-    <nav>
-      <ul>
-        <!-- Included a role and label on the "a" element, to ensure that 
-          people using assistive technologies are able to use them. 
-          Examples of assistive technologies are screen readers,
-          switch controls and speech recognition software. -->
-        <li><a href="#about" role="button" aria-label="about session">About Me</a></li>
-        <li><a href="#work" role="button" aria-label="work session">Work</a></li>
-        <li><a href="#contact" role="button" aria-label="contact session">Contact Me</a></li>
-        <li><a href="./assets/doc/ICT_CV.pdf" target="_blank" rel='noreferrer noopener' role="button"
-            aria-label="resume pdf">Resume</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar fixed-top navbar-expand-lg ">
+    <div class="container-fluid d-flex">
+      <h1 class="navbar-brand fw-bolder">Igor Traspadini</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav fw-bolder">
+          <li class="nav-item">
+            <a class="nav-link" href="#about" role="button" aria-label="about session">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work" role="button" aria-label="work session">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" role="button" aria-label="contact session">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./assets/doc/ICT_CV.pdf" target="_blank" rel='noreferrer noopener' role="button"
+              aria-label="resume pdf">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- hero banner -->
   <section class="hero-banner">
@@ -127,6 +140,14 @@
     <p>ICT © 2023</p>
   </footer>
 
+  <!-- Optional JavaScript -->
+  <!-- Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

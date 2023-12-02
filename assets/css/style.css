@@ -7,35 +7,40 @@
   --color-3: #A3CCB3;
   --color-4: #403C3B;
   --color-5: #59344F;
+
+  --font-family-2: Poppins,sans-serif;
+  --color-6: #050816;
+  --color-7: #FFFFFF;
+  --color-8: #AAA6C3;
 }
 
-/* Removed the initial css configuration and moved on
-to the reset.css file. 
-
-* {
-  box-sizing: border-box;
+.navbar-nav{
+  margin-left: auto;
+  margin-right: 0 !important;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+.navbar {
+  background-color: #050816;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.navbar-brand {
   margin: 0;
 }
 
-p {
-  margin: 0;
+.nav-link {
+  font-family: var(--font-family-2);
+  color: var(--color-8);
+  font-size: 18px;
 }
-*/
+
+.navbar-toggler {
+  background-color: var(--color-8);
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: var(--color-7);
+}
+
 
 
 /* included a backgroud color  */
@@ -44,37 +49,11 @@ body {
 }
 
 h1 {
-  background-color: var(--color-3);
-  color: var(--color-4);
-  font-size: 30px;
-  height: 40px;
-  padding: 0 7px 0 40px;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-/* included a flex box to accommodate the h1 and nav elements */
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 60px;
-  height: 55px;
-  background-color: var(--color-4);
-}
-
-ul li {
-  display: inline-block;
-  padding: 0 7px 0 7px;
-  margin-left: 10px;
-  border-bottom: var(--color-3) solid;
-  align-content: center;
-}
-
-ul li a {
-  color: var(--color-3);
-  text-decoration: none;
+  font-family: var(--font-family-2);
+  color: var(--color-7) !important;
+  font-size: 20px !important;
+  padding: 0 0 0 40px;
+  text-align: center;  
 }
 
 .hero-banner {
