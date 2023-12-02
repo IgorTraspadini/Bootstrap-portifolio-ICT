@@ -1,0 +1,326 @@
+/*included a set of variables
+  - color pallet
+*/
+:root {
+  --color-1: #ecc577;
+  --color-2: #D6BA73;
+  --color-3: #A3CCB3;
+  --color-4: #403C3B;
+  --color-5: #59344F;
+}
+
+/* Removed the initial css configuration and moved on
+to the reset.css file. 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+*/
+
+
+/* included a backgroud color  */
+body {
+  background-color: var(--color-3)
+}
+
+h1 {
+  background-color: var(--color-3);
+  color: var(--color-4);
+  font-size: 30px;
+  height: 40px;
+  padding: 0 7px 0 40px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* included a flex box to accommodate the h1 and nav elements */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 60px;
+  height: 55px;
+  background-color: var(--color-4);
+}
+
+ul li {
+  display: inline-block;
+  padding: 0 7px 0 7px;
+  margin-left: 10px;
+  border-bottom: var(--color-3) solid;
+  align-content: center;
+}
+
+ul li a {
+  color: var(--color-3);
+  text-decoration: none;
+}
+
+.hero-banner {
+  background-image: url(../images/web.jpg);
+  background-size: 80% 200px;
+  background-repeat: no-repeat;
+  background-position: left;
+  opacity: 0.8;
+  height: 200px;
+  background-color: #0E396C;
+}
+
+.hero-banner div>h2 {
+  position: absolute;
+  top: 200px;
+  right: 60px;
+  width: 300px;
+  color: var(--color-3);
+  font-size: 25px;
+}
+
+.page-wrapper {
+  display: grid;
+  margin: 20px 10% 10px 5%;
+  row-gap: 20px;
+  column-gap: 5px;
+  grid-template-rows: 180px 1fr 90px;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: "about about-content"
+    "work work-content"
+    "contact contact-content";
+}
+
+.page-section {
+  font-size: 30px;
+  text-align: right;
+  line-height: 1;
+  padding-right: 5px;
+  color: var(--color-4);
+  word-spacing: 30px;
+}
+
+.about-content,
+.contact-content,
+.work-content {
+  padding-left: 25px;
+  border-left: var(--color-4) solid;
+}
+
+#about {
+  grid-area: about;
+}
+
+.about-content {
+  grid-area: about-content;
+}
+
+#work {
+  grid-area: work;
+}
+
+.work-content {
+  grid-area: work-content;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+.contact-content {
+  grid-area: contact-content;
+}
+
+.work-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 150px 150px;
+  grid-template-areas: "project-1 project-1"
+    "project-2 project-3"
+    "project-4 project-5";
+  gap: 10px;
+}
+
+.project {
+  border: var(--color-5) solid;
+  border-width: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#project-1 {
+  grid-area: project-1;
+  background-image: url(../images/web-application.JPG);
+}
+
+#project-2 {
+  grid-area: project-2;
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+#project-3 {
+  grid-area: project-3;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+#project-4 {
+  grid-area: project-4;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+
+#project-5 {
+  grid-area: project-5;
+  background-image: url(../images/02-run-buddy.jpg);
+}
+
+h3 {
+  font-size: 22px;
+}
+
+article {
+  display: inline-block;
+  position: relative;
+  top: 70px;
+  padding: 0 10px 0 10px;
+  color: var(--color-3);
+  background-color: var(--color-5);
+}
+
+#project-1 article {
+  top: 320px;
+}
+
+/* CSS of the contact element */
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact a {
+  color: var(--color-4);
+  font-size: 20px;
+  text-decoration: none;
+  border-bottom: var(--color-4) solid;
+  padding: 2px 5px;
+}
+
+/* CSS of the footer element */
+footer {
+  text-align: center;
+  padding: 5px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  background-color: var(--color-4);
+  color: var(--color-3);
+}
+
+
+/* Added a Media Queries to allowed a Responsive Web Design*/
+/* adjust the elements to display in a ipad device */
+@media screen and ((max-width: 768px) or (max-device-width: 1024px)) {
+  nav {
+    display: none;
+  }
+
+  .hero-banner {
+    background-size: 100% 200px;
+  }
+
+  .page-wrapper {
+    display: grid;
+    margin: 15px 2% 10px 2%;
+    row-gap: 10px;
+    grid-template-rows: 40px 190px 40px 1fr 40px 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "about"
+      "about-content"
+      "work"
+      "work-content"
+      "contact"
+      "contact-content";
+  }
+
+  .page-section {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1;
+    padding-right: 0px;
+    color: var(--color-4);
+    word-spacing: normal;
+  }
+
+  .about-content,
+  .contact-content,
+  .work-content {
+    padding-left: 0px;
+    border-left: none;
+  }
+
+  #project-1 article {
+    top: 220px;
+  }
+
+  .work-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 150px 150px 150px 150px;
+    grid-template-areas: "project-1"
+      "project-2"
+      "project-3"
+      "project-4"
+      "project-5";
+    gap: 10px;
+  }
+
+}
+
+/* adjust the elements to display in a phone device */
+@media screen and ((max-width: 320px) or (max-device-width: 480px)) {
+
+  .hero-banner div>h2 {
+    display: none;
+  }
+
+  .page-wrapper {
+    grid-template-rows: 40px 330px 40px 1fr 40px 120px;
+  }
+
+  #project-1 article {
+    top: 200px;
+  }
+
+  .work-wrapper {
+    gap: 5px;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact a {
+    font-size: 15px;
+    padding: 0px 5px;
+  }
+
+}
