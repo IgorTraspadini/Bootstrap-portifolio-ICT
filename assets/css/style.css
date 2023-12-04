@@ -12,6 +12,9 @@
   --color-6: #050816;
   --color-7: #FFFFFF;
   --color-8: #AAA6C3;
+  --color-9: #151030;  
+  --color-10: rgb(5,8,22);
+  --color-11: #050817;
 }
 
 .navbar-nav{
@@ -45,7 +48,7 @@
 
 /* included a backgroud color  */
 body {
-  background-color: var(--color-3)
+  background-color: var(--color-10)
 }
 
 h1 {
@@ -56,23 +59,22 @@ h1 {
   text-align: center;  
 }
 
-.hero-banner {
-  background-image: url(../images/web.jpg);
-  background-size: 80% 200px;
-  background-repeat: no-repeat;
-  background-position: left;
-  opacity: 0.8;
-  height: 200px;
-  background-color: #0E396C;
+.hero {
+  background-color: var(--color-9);
+  color: var(--color-7);
+  padding-top: 59px;
 }
 
-.hero-banner div>h2 {
-  position: absolute;
-  top: 200px;
-  right: 60px;
-  width: 300px;
-  color: var(--color-3);
-  font-size: 25px;
+.hero img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+h2 {
+  font-size: 45px;
+  color: var(--color-9);
+  text-shadow: 1px 1px 1px var(--color-8);
 }
 
 .page-wrapper {
