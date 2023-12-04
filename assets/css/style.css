@@ -77,6 +77,10 @@ h2 {
   text-shadow: 1px 1px 1px var(--color-8);
 }
 
+.aa {
+  justify-items: center;
+}
+
 .page-wrapper {
   display: grid;
   margin: 20px 10% 10px 5%;
