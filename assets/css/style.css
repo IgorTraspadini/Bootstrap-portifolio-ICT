@@ -8,16 +8,17 @@
   --color-4: #403C3B;
   --color-5: #59344F;
 
-  --font-family-2: Poppins,sans-serif;
+  --font-family-2: Poppins, sans-serif;
   --color-6: #050816;
   --color-7: #FFFFFF;
   --color-8: #AAA6C3;
-  --color-9: #151030;  
-  --color-10: rgb(5,8,22);
+  --color-9: #151030;
+  --color-10: rgb(5, 8, 22);
   --color-11: #050817;
+  --color-12: rgb(21, 16, 48);
 }
 
-.navbar-nav{
+.navbar-nav {
   margin-left: auto;
   margin-right: 0 !important;
 }
@@ -40,11 +41,10 @@
   background-color: var(--color-8);
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--color-7);
 }
-
-
 
 /* included a backgroud color  */
 body {
@@ -56,7 +56,7 @@ h1 {
   color: var(--color-7) !important;
   font-size: 20px !important;
   padding: 0 0 0 40px;
-  text-align: center;  
+  text-align: center;
 }
 
 .hero {
@@ -77,9 +77,21 @@ h2 {
   text-shadow: 1px 1px 1px var(--color-8);
 }
 
-.aa {
-  justify-items: center;
+.img-small {
+  height: 200px;
+  object-fit: cover;
 }
+
+.img-big {
+  height: 30vw;
+}
+
+.card-body {
+  background-color: var(--color-12);
+  color: var(--color-8);
+}
+
+
 
 .page-wrapper {
   display: grid;
