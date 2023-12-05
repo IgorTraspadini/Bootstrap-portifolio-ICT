@@ -91,6 +91,31 @@ h2 {
   color: var(--color-8);
 }
 
+figure img {
+  height: 100px;
+  width: 100px;
+}
+
+figcaption {
+  color: var(--color-7);
+  font-family: var(--font-family-2);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .page-wrapper {
