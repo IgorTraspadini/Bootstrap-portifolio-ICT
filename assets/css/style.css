@@ -102,7 +102,14 @@ figcaption {
   text-align: center;
 }
 
-
+.contact a {
+  color: var(--color-8);
+  font-size: 20px;
+  font-family: var(--font-family-2);
+  text-decoration: none;
+  border-bottom: var(--color-8) solid;
+  padding: 2px 5px;
+}
 
 
 
@@ -239,13 +246,7 @@ article {
   justify-content: space-around;
 }
 
-.contact a {
-  color: var(--color-4);
-  font-size: 20px;
-  text-decoration: none;
-  border-bottom: var(--color-4) solid;
-  padding: 2px 5px;
-}
+
 
 /* CSS of the footer element */
 footer {
